@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Søg om optagelsessamtale | INITO Skin Academy</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="/" aria-label="INITO Skin Academy – forside"><img src="/assets/logo-groen.png" alt="INITO Skin Academy" width="480" height="287"></a>
+    <a class="link" href="/">Tilbage til uddannelsen</a>
+  </div>
+</header>
+
+<main class="apply">
+  <div class="wrap">
+    <aside>
+      <h1>Søg om en optagelsessamtale</h1>
+      <p class="muted">Det tager ca. 2 minutter. Vi kontakter dig for at aftale en samtale.</p>
+      <div class="card">
+        <div><div class="k">Pris</div><div>85.000 kr. · delbetaling muligt</div></div>
+        <div><div class="k">Næste hold</div><div>14. november – 13. december 2026 · 6 kursusdage</div></div>
+        <div><div class="k">Krav</div><div>Dansk autorisation som sygeplejerske, læge eller tandlæge</div></div>
+        <div><div class="k">Sted</div><div>Vesterbrogade 161, 1800 Frederiksberg C</div></div>
+      </div>
+    </aside>
+
+    <form class="card" id="ansog" novalidate>
+      <fieldset>
+        <legend>1. Hvad er din faglige baggrund?</legend>
+        <label class="opt"><input type="radio" name="baggrund" value="sygeplejerske" required> Sygeplejerske</label>
+        <label class="opt"><input type="radio" name="baggrund" value="laege"> Læge</label>
+        <label class="opt"><input type="radio" name="baggrund" value="tandlaege"> Tandlæge</label>
+        <label class="opt"><input type="radio" name="baggrund" value="anden"> Anden baggrund</label>
+        <div class="warn" id="warn-anden">Uddannelsen kræver dansk autorisation som sygeplejerske, læge eller tandlæge. Har du en anden baggrund, er du velkommen til at ringe på <a href="tel:+4571994455">71 99 44 55</a> og høre om dine muligheder.</div>
+      </fieldset>
+
+      <div class="field">
+        <label class="qlabel" for="aut">2. Autorisations-ID <span class="hint" style="font-weight:400">(valgfrit)</span></label>
+        <input id="aut" name="autorisation" type="text" autocomplete="off">
+        <div class="hint">Du finder det i Autorisationsregistret. Det hjælper os med at forberede samtalen.</div>
+      </div>
+
+      <fieldset>
+        <legend>3. Har du erfaring med injektionsbehandlinger?</legend>
+        <label class="opt"><input type="radio" name="erfaring" value="ingen" required> Nej, ingen erfaring</label>
+        <label class="opt"><input type="radio" name="erfaring" value="lidt"> Lidt – fx et kursus, men ikke registreret</label>
+        <label class="opt"><input type="radio" name="erfaring" value="registreret"> Ja, jeg er registreret i dag</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Hvad er dit mål med uddannelsen?</legend>
+        <label class="opt"><input type="radio" name="maal" value="ansaettelse" required> Ansættelse i en klinik</label>
+        <label class="opt"><input type="radio" name="maal" value="egen-klinik"> Starte egen klinik</label>
+        <label class="opt"><input type="radio" name="maal" value="supplement"> Supplement til mit nuværende job</label>
+        <label class="opt"><input type="radio" name="maal" value="ved-ikke"> Ved ikke endnu</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Hvornår ønsker du at starte?</legend>
+        <label class="opt"><input type="radio" name="start" value="naeste-hold" required> Næste hold</label>
+        <label class="opt"><input type="radio" name="start" value="inden-6-mdr"> Inden for 6 måneder</label>
+        <label class="opt"><input type="radio" name="start" value="senere"> Senere</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Uddannelsen koster 85.000 kr. Hvordan passer det dig?</legend>
+        <label class="opt"><input type="radio" name="pris" value="inden-for-budget" required> Det er inden for mit budget</label>
+        <label class="opt"><input type="radio" name="pris" value="delbetaling"> Jeg vil gerne høre om delbetaling</label>
+        <label class="opt"><input type="radio" name="pris" value="usikker"> Jeg er usikker</label>
+      </fieldset>
+
+      <div>
+        <div class="qlabel">7. Dine kontaktoplysninger</div>
+        <div class="fields">
+          <div class="field"><label for="navn">Navn</label><input id="navn" name="navn" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="tlf">Telefon</label><input id="tlf" name="telefon" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="mail">E-mail</label><input id="mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="tid">Bedste tidspunkt at ringe</label>
+            <select id="tid" name="tidspunkt"><option>Formiddag</option><option>Eftermiddag</option><option>Aften</option></select></div>
+        </div>
+      </div>
+
+      <label class="consent"><input type="checkbox" name="samtykke" required> <span>Jeg accepterer, at INITO Skin Academy kontakter mig om uddannelsen. Læs <a href="https://www.inito.dk/cookie-politik/">privatlivspolitikken</a>.</span></label>
+
+      <div class="warn" id="warn-mangler">Udfyld venligst alle spørgsmål og dine kontaktoplysninger.</div>
+      <button type="submit" class="btn" style="align-self:flex-start">Send ansøgning</button>
+      <div class="notice" id="notice" role="status">Ansøgningen kan ikke sendes online endnu. Ring på <a href="tel:+4571994455">71 99 44 55</a> eller skriv til <a href="mailto:klinik@inito.dk">klinik@inito.dk</a>, så hører du fra os.</div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>INITO Skin Academy · Vesterbrogade 161, 1800 Frederiksberg C · <a href="tel:+4571994455">71 99 44 55</a></div>
+    <a href="https://www.inito.dk/cookie-politik/">Privatlivspolitik</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('ansog');
+  var anden = document.getElementById('warn-anden');
+  form.addEventListener('change', function (e) {
+    if (e.target.name === 'baggrund') anden.classList.toggle('show', e.target.value === 'anden');
+  });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var ok = form.checkValidity();
+    document.getElementById('warn-mangler').classList.toggle('show', !ok);
+    if (!ok) return;
+    // TODO: kobles til lead-systemet (Supabase) når kontaktflyten er besluttet
+    document.getElementById('notice').classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
